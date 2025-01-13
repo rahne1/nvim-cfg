@@ -5,18 +5,22 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require("lackluster").setup({
-        -- You can add any custom configuration here
-      })
+      require("lackluster").setup({})
 
       vim.cmd.colorscheme("lackluster")
     end,
   },
   {
+    "sho-87/kanagawa-paper.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
 
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "lackluster",
+      colorscheme = "kanagawa-paper",
     },
   },
 }
